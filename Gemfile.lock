@@ -156,7 +156,9 @@ GEM
     material_icons (2.2.1)
       railties (>= 3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.11.0)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -188,8 +190,10 @@ GEM
       method_source (~> 1.0)
       spoon (~> 0.0)
     public_suffix (4.0.6)
-    puma (3.12.6)
-    puma (3.12.6-java)
+    puma (4.3.8)
+      nio4r (~> 2.0)
+    puma (4.3.8-java)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -342,7 +346,7 @@ DEPENDENCIES
   mini_magick (~> 4.8)
   pg
   pry
-  puma (~> 3.12)
+  puma (~> 4.3)
   rails (= 6.0.0)
   sass-rails (~> 5.0)
   selenium-webdriver
